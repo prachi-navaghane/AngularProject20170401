@@ -6,12 +6,18 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MyComponent } from './my/my.component';
 import { MysmallComponent } from './mysmall/mysmall.component';
+import { OurComponent } from './our/our.component';
+import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
+import { WhileComponent } from './our/while.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponent,
-    MysmallComponent
+    MysmallComponent,
+    OurComponent,
+    ViewEncapsulationComponent,
+    WhileComponent
   ],
   imports: [
     BrowserModule,
