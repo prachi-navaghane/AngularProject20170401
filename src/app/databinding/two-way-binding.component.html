@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h5>Two way binding</h5>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            UserName:
+        </div>
+        <div class="col-md-6">
+            <input type="text" [(ngModel)]="user.userName"> {{user.userName}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            Password:
+        </div>
+        <div class="col-md-6">
+            <input type="text" [(ngModel)]="user.password"> {{user.password}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <input type="button" class="btn btn-primary" (click)="print()" value="Print">
+        </div>
+    </div>
+</div>

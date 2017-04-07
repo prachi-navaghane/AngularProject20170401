@@ -9,6 +9,10 @@ import { MysmallComponent } from './mysmall/mysmall.component';
 import { OurComponent } from './our/our.component';
 import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
 import { WhileComponent } from './our/while.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { PropertyBindingComponent } from './databinding/property-binding.component';
+import { EventBindingComponent } from './databinding/event-binding.component';
+import { TwoWayBindingComponent } from './databinding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { WhileComponent } from './our/while.component';
     MysmallComponent,
     OurComponent,
     ViewEncapsulationComponent,
-    WhileComponent
+    WhileComponent,
+    DatabindingComponent,
+    PropertyBindingComponent,
+    EventBindingComponent,
+    TwoWayBindingComponent,
   ],
   imports: [
     BrowserModule,

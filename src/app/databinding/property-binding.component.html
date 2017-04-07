@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h5>Property binding</h5>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <input type="text" value="{{inputValue}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <input type="text" [value]="inputValue">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <input [type]="inputType" [value]="inputValue">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p [style.border]="redBorder">Hello</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p [class.btn]="'true'" [class.btn-primary]="'true'">Hello</p>
+        </div>
+    </div>
+</div>
