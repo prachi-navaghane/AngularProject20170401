@@ -1,14 +1,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h5>Custom properties binding</h5>
+            <h5>Custom event binding</h5>
             <hr>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div [style.border]="borderColor">
-                <h1>This is actual coding, welcome to codekul.com</h1>
-            </div>
+            <input (click)="onBtnClick()" value="Okay" type="button" class="btn btn-primary">
         </div>
     </div>

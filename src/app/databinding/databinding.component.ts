@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./databinding.component.css']
 })
 export class DatabindingComponent implements OnInit {
-myName = 'android';
+  myName = 'android';
   constructor() { }
 
   ngOnInit() {
   }
-
+  onReceivedEvent(eventArg: string) {
+    this.myName = eventArg;
+  }
 }
