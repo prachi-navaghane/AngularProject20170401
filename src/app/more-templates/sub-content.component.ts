@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ContentChild, ElementRef, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sub-content',
@@ -29,10 +29,15 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class SubContentComponent implements OnInit {
-
+  @ContentChild('ip') ip: ElementRef;
+  @Output() actualIp: string;
   constructor() { }
 
   ngOnInit() {
+  }
+  myIp() {
+    console.log(`called ` + this.ip.nativeElement.value);
+    this.actualIp = this.ip.nativeElement.value;
   }
 
 }

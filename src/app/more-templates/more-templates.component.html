@@ -6,11 +6,21 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <app-sub-content>
+            <app-sub-content #sub>
                 <div class="container" header>
                     <div class="row">
                         <div class="col-md-12">
-                            <input value="Injected header" type="button" class="btn btn-primary">
+                            <input type="text" #ip>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input value="Injected header" type="button" class="btn btn-primary" (click)="sub.myIp()">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            {{sub.actualIp}}
                         </div>
                     </div>
                 </div>
