@@ -16,4 +16,10 @@
 
         </div>
     </div>
+    <div class="row">
+        <div *myIf="isShown">
+            Sugered custom structural directive!! :)
+        </div>
+        <input type="button" value="myIf toggle" (click)="isShown = !isShown" class="btn btn-primary">
+    </div>
 </div>

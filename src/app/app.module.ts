@@ -26,6 +26,9 @@ import { LifecycleIndexComponent } from './lifecycle/lifecycle-index.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { AttrDirCompComponent } from './directives/attr-dir-comp.component';
 import { SizerDirective } from './directives/sizer.directive';
+import { MyIfDirective } from './directives/my-if.directive';
+import { ServiceComponent } from './service/service.component';
+import { OneComponent } from './service/one.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,9 @@ import { SizerDirective } from './directives/sizer.directive';
     DirectivesComponent,
     AttrDirCompComponent,
     SizerDirective,
+    MyIfDirective,
+    ServiceComponent,
+    OneComponent,
   ],
   imports: [
     BrowserModule,
