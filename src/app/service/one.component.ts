@@ -23,20 +23,18 @@ import { Component, OnInit } from '@angular/core';
     </div>
 
   `,
-  styles: [],
-  providers : [DataService]
+  styles: []
 })
 export class OneComponent implements OnInit {
   mobiles: Array<string>;
 
-  constructor(private data : DataService) {
+  constructor(private data: DataService) {
     this.mobiles = this.data.getMobiles();
-   }
+  }
 
   ngOnInit() {
   }
-  AddNewMobile(mobile)
-  {
+  AddNewMobile(mobile) {
     this.data.addMobile(mobile);
   }
 

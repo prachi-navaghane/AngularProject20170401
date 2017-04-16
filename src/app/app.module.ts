@@ -1,3 +1,5 @@
+import { MapService } from './service/map.service';
+import { DataService } from './service/data.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -29,6 +31,7 @@ import { SizerDirective } from './directives/sizer.directive';
 import { MyIfDirective } from './directives/my-if.directive';
 import { ServiceComponent } from './service/service.component';
 import { OneComponent } from './service/one.component';
+import { TwoComponent } from './service/two.component';
 
 @NgModule({
   declarations: [
@@ -58,13 +61,14 @@ import { OneComponent } from './service/one.component';
     MyIfDirective,
     ServiceComponent,
     OneComponent,
+    TwoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [DataService, MapService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
