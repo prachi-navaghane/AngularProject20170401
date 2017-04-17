@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
    </div>
    <div class="row">
    <div class="col-md-8">
-   <div [ngClass]="{redBorder:true}">
+   <div [ngClass]="{redBorder:isShown}">
    this is codekul.com
    </div>
    </div>

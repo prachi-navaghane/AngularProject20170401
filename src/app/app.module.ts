@@ -32,6 +32,9 @@ import { MyIfDirective } from './directives/my-if.directive';
 import { ServiceComponent } from './service/service.component';
 import { OneComponent } from './service/one.component';
 import { TwoComponent } from './service/two.component';
+import { ProjModOneComponent } from './proj-mod-one/proj-mod-one.component';
+import { DropdownDirective } from './proj-mod-one/dropdown.directive';
+import { StrDirComponent } from './directives/str-dir.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +64,10 @@ import { TwoComponent } from './service/two.component';
     MyIfDirective,
     ServiceComponent,
     OneComponent,
-    TwoComponent
+    TwoComponent,
+    ProjModOneComponent,
+    DropdownDirective,
+    StrDirComponent
   ],
   imports: [
     BrowserModule,

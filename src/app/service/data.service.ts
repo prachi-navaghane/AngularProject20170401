@@ -1,5 +1,5 @@
 import { Injectable, EventEmitter } from '@angular/core';
-export interface dataListener {
+export interface DataListener {
   listen(mob: string): void;
 }
 @Injectable()
@@ -19,7 +19,7 @@ export class DataService {
     this.mobiles.push(mob);
     this.eventEmitter.emit(mob);
   }
-  listen(dataListener: dataListener) {
+  listen(dataListener: DataListener) {
     this.eventEmitter.subscribe((mob) => dataListener.listen(mob));
   }
 }
